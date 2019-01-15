@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/msg_tv"
+        style="@style/text"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:lineSpacingMultiplier="1.4"
+        android:gravity="center"
+        android:padding="15dp" />
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout style="@style/h_match_parent_no">
+
+
+        <TextView
+            android:id="@+id/no_tv"
+            style="@style/text14color999"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/cancel" />
+
+        <TextView style="@style/line_v1dp_divider" />
+
+        <TextView
+            android:id="@+id/yes_tv"
+            style="@style/text14colorWhite"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/color33cea6"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="确认" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

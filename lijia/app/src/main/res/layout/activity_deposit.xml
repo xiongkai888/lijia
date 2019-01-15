@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no"
+    tools:context="com.lanmei.lijia.ui.settting.activity.DepositActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_wd_account"
+        style="@style/LL_h_border_bottom_and_top"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/d_10dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_tv"
+                style="@style/text"
+                android:text="添加银行卡" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tail_number_tv"
+                android:layout_marginTop="@dimen/d_3dp"
+                style="@style/text14color999"
+                android:text="尾号****储蓄卡" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            style="@style/text"
+            android:src="@drawable/in_right" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorCDCD" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            style="@style/text14color999"
+            android:text="提现金额" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text"
+                android:text="￥"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/withdraw_money_et"
+                style="@style/only_EditText_style"
+                android:layout_marginLeft="8dp"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        style="@style/LL_h_border_bottom_and_top"
+        android:layout_marginTop="15dp"
+        android:padding="@dimen/d_10dp">
+
+        <TextView
+            android:id="@+id/money_tv"
+            style="@style/text_weight" />
+
+        <TextView
+            android:id="@+id/all_withdraw_tv"
+            style="@style/text14color33cea6"
+            android:text="全部提现" />
+
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/text14color999"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="24小时内到帐" />
+
+    <Button
+        android:id="@+id/withdraw_bt"
+        style="@style/button_style"
+        android:layout_marginTop="20dp"
+        android:text="提现" />
+
+
+</LinearLayout>

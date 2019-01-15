@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d_45dp">
+
+    <TextView
+        android:id="@+id/total_price_tv"
+        style="@style/text_weight"
+        android:layout_height="match_parent"
+        android:background="@color/color272933"
+        android:gravity="center"
+        android:text="尾款：0元"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/go_tv"
+        style="@style/text_weight"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="去上门"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/order_cancel_tv"
+        style="@style/text_weight"
+        android:layout_height="match_parent"
+        android:background="@color/color33cea6"
+        android:gravity="center"
+        android:text="取消订单"
+        android:textColor="@color/white" />
+
+</LinearLayout>

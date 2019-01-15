@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/submit_bt"
+    android:layout_width="match_parent"
+    android:background="@drawable/button_selector"
+    android:text="@string/submit"
+    android:textColor="@color/white"
+    android:layout_height="@dimen/d_45dp"/>
+

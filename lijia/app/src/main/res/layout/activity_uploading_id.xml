@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no"
+    android:background="@color/color2d2e38"
+    tools:context="com.lanmei.lijia.ui.league.UploadingIdActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+
+    <ScrollView
+        style="@style/text_weight_v"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/v_all_match_parent_no">
+
+
+            <ImageView
+                android:id="@+id/front_iv"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="@dimen/d_10dp"
+                android:layout_marginLeft="@dimen/d_30dp"
+                android:layout_marginRight="@dimen/d_30dp"
+                android:layout_marginTop="@dimen/d_20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shenfenzhengzm" />
+
+            <TextView
+                style="@style/text14color33cea6"
+                android:layout_gravity="center_horizontal"
+                android:text="身份证正面" />
+
+            <ImageView
+                android:id="@+id/reverse_iv"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="@dimen/d_10dp"
+                android:layout_marginLeft="@dimen/d_30dp"
+                android:layout_marginRight="@dimen/d_30dp"
+                android:layout_marginTop="@dimen/d_20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shenfenzhengfm" />
+
+            <TextView
+                style="@style/text14color33cea6"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/d_20dp"
+                android:text="身份证反面" />
+
+            <TextView style="@style/line_H1dp_divider" />
+
+            <TextView
+                style="@style/text16colorWhite"
+                android:layout_marginLeft="@dimen/d_40dp"
+                android:layout_marginRight="@dimen/d_40dp"
+                android:layout_marginTop="@dimen/d_30dp"
+                android:text="照片需符号一下条件" />
+
+            <TextView
+                style="@style/text14colorWhite"
+                android:layout_marginBottom="@dimen/d_30dp"
+                android:layout_marginLeft="@dimen/d_40dp"
+                android:layout_marginRight="@dimen/d_40dp"
+                android:text=".请保证证件信息清晰可见\n.四角对齐\n.无反光无遮挡" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <include layout="@layout/include_uploading" />
+
+</LinearLayout>

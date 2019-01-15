@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#272933</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="black">#000</color>
+    <color name="red">#ff0000</color>
+    <color name="color272933">#272933</color>
+    <color name="color2d2e38">#2d2e38</color>
+    <color name="transparency">#00000000</color>
+    <color name="divider">#5fb9afb1</color>
+    <color name="white">#FFF</color>
+    <color name="colorAAA">#AAA</color>
+    <color name="colorF4F4">#F4F4F4</color>
+    <color name="color333">#333</color>
+    <color name="color666">#666</color>
+    <color name="color999">#999</color>
+    <color name="colorEEE">#EEE</color>
+    <color name="color848c99">#848c99</color>
+    <color name="colorCDCD">#CDCDCD</color>
+    <color name="color718081">#718081</color>
+    <color name="color33cea6">#33cea6</color>
+    <color name="color998462">#998462</color>
+    <color name="color494d5c">#494d5c</color>
+    <color name="color7c7c7c">#7c7c7c</color>
+    <color name="color3d3d3d">#3d3d3d</color>
+    <color name="colorC2C3C5">#C2C3C5</color>
+    <color name="color2d2d2d">#2d2d2d</color>
+    <color name="colorB2B3B5">#B2B3B5</color>
+    <color name="colorFBF1C2">#FBF1C2</color>
+    <color name="uncompleted_color">#A3E0D9</color>
+    <color name="uncompleted_text_color">#F8F8F8</color>
+    <color name="preview_mock">#9a000000</color>
+    <color name="color00D3C4">#00D3C4</color>
+    <color name="color0066B3">#0066B3</color>
+    <color name="colorCC000A">#CC000A</color>
+    <color name="colorA71E32">#A71E32</color>
+    <color name="color4D4D">#4D4D4D</color>
+</resources>

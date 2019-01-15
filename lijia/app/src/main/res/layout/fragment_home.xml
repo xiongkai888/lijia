@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/all_match_parent_no">
+
+    <com.xson.common.widget.SmartSwipeRefreshLayout
+        android:id="@+id/pull_refresh_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_content" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        style="@style/h_match_parent_no"
+        android:gravity="center_vertical"
+        android:background="@color/color2d2e38"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/order_setting_tv"
+            android:text="接单设置"
+            android:background="@drawable/setting_bg_xml"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:drawableTop="@drawable/home_setting_sub"
+            android:layout_width="@dimen/d_80dp"
+            android:layout_height="@dimen/d_50dp"
+            android:textColor="@color/color718081"
+            android:textSize="@dimen/txt_12sp" />
+
+        <Button
+            android:id="@+id/order_bt"
+            style="@style/button_style"
+            android:layout_height="@dimen/d_50dp"
+            android:textSize="@dimen/txt_18sp"
+            android:text="点击上班" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

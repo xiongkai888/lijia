@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/d_10dp"
+    style="@style/ll_bottom_h">
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:text="我们不一样？"
+        android:singleLine="true"
+        android:ellipsize="end"
+       style="@style/text_weight"/>
+
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/in_right"
+        style="@style/text" />
+
+</LinearLayout>

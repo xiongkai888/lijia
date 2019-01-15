@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent"
+    tools:context="com.lanmei.lijia.ui.home.activity.HelperCenterActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:background="@color/colorEEE"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/d_10dp">
+
+        <include layout="@layout/search_edittext" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/v_all_match_parent_no">
+
+
+            <com.bigkoo.convenientbanner.ConvenientBanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:canLoop="true" />
+
+
+            <TextView style="@style/line_H1dp_divider" />
+
+            <TextView
+                style="@style/text14color999"
+                android:padding="@dimen/d_10dp"
+                android:text="热门问题" />
+
+            <TextView style="@style/line_H1dp_divider" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/line_H10dp_on" />
+
+            <TextView
+                style="@style/text14color999"
+                android:padding="@dimen/d_10dp"
+                android:text="问题分类" />
+
+            <TextView style="@style/line_H1dp_divider" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/c_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                style="@style/line_H10dp_on" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView style="@style/line_H1dp_divider" />
+
+
+    <TextView
+        android:id="@+id/couple_tv"
+        style="@style/text14color33cea6"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/details_1"
+        android:gravity="center"
+        android:padding="@dimen/d_10dp"
+        android:text="@string/question_feedback" />
+
+</LinearLayout>

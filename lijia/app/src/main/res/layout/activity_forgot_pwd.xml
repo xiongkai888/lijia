@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                style="@style/ll_no_border"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="@dimen/d_80dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@drawable/icon_phone" />
+
+
+                <LinearLayout
+                    style="@style/ll_bottom_h"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp">
+
+                    <com.xson.common.widget.DrawClickableEditText
+                        android:id="@+id/phone_et"
+                        style="@style/editText_login_style"
+                        android:layout_marginRight="15dp"
+                        android:hint="@string/input_phone_number"
+                        android:inputType="phone"
+                        android:maxLength="11"
+                        android:paddingRight="15dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ll_no_border"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@drawable/icon_code" />
+
+
+                <LinearLayout
+                    style="@style/ll_bottom_h"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp">
+
+
+                    <com.xson.common.widget.DrawClickableEditText
+                        android:id="@+id/code_et"
+                        style="@style/editText_login_style"
+                        android:layout_marginRight="@dimen/d_5dp"
+                        android:layout_weight="1"
+                        android:hint="@string/input_six_code"
+                        android:inputType="number"
+                        android:maxLength="6" />
+
+                    <Button
+                        android:id="@+id/obtainCode_bt"
+                        android:layout_width="93dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/code_shape"
+                        android:text="@string/obtain_code"
+                        android:textColor="@color/color999" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/ll_no_border"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@drawable/icon_pwd" />
+
+                <LinearLayout
+                    style="@style/ll_bottom_h"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp">
+
+
+                    <com.xson.common.widget.DrawClickableEditText
+                        android:id="@+id/pwd_et"
+                        style="@style/editText_login_style"
+                        android:layout_marginRight="@dimen/d_15dp"
+                        android:layout_weight="1"
+                        android:hint="@string/input_password_count"
+                        android:inputType="textPassword"
+                        android:maxLength="18" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/ll_no_border"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/text"
+                    android:src="@drawable/icon_pwd" />
+
+
+                <LinearLayout
+                    style="@style/ll_bottom_h"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="15dp">
+
+
+                    <com.xson.common.widget.DrawClickableEditText
+                        android:id="@+id/pwd_again_et"
+                        style="@style/editText_login_style"
+                        android:layout_marginRight="@dimen/d_15dp"
+                        android:layout_weight="1"
+                        android:hint="@string/input_password_again"
+                        android:inputType="textPassword"
+                        android:maxLength="18" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/confirm_bt"
+                style="@style/button_style"
+                android:layout_marginBottom="@dimen/d_50dp"
+                android:layout_marginTop="@dimen/d_50dp"
+                android:text="确定" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

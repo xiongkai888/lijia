@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no"
+    tools:context="com.lanmei.lijia.ui.settting.activity.AccountDetailsActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <com.xson.common.widget.SmartSwipeRefreshLayout
+        android:id="@+id/pull_refresh_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_0dp"
+        android:layout_weight="1"
+        android:divider="@color/divider"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@null" />
+
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout
+        style="@style/h_match_parent"
+        android:layout_height="@dimen/d_45dp">
+
+
+        <LinearLayout
+            android:id="@+id/account_details_tv"
+            style="@style/text_weight"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text"
+                android:drawableLeft="@drawable/details_1"
+                android:gravity="center"
+                android:textColor="@color/color33cea6"
+                android:text="账户明细" />
+
+        </LinearLayout>
+
+
+        <TextView style="@style/line_v1dp_divider" />
+
+
+        <LinearLayout
+            android:id="@+id/deposit_tv"
+            style="@style/text_weight"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text"
+                android:drawableLeft="@drawable/details_2"
+                android:drawablePadding="@dimen/d_3dp"
+                android:gravity="center"
+                android:text="申请提现" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

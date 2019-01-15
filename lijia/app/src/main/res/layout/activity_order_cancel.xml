@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   style="@style/v_all_match_parent_no"
+    tools:context="com.lanmei.lijia.ui.settting.activity.OrderCancelActivity">
+
+    <include layout="@layout/include_centertitletoolbar"/>
+
+
+    <TextView
+        android:background="@color/colorFBF1C2"
+        android:padding="@dimen/d_10dp"
+        android:text="请提出你的宝贵意见，我们会持续改进！"
+        android:layout_width="match_parent"
+        style="@style/text12color998462" />
+
+    <com.xson.common.widget.SmartSwipeRefreshLayout
+        android:id="@+id/pull_refresh_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_0dp"
+        android:layout_weight="1"
+        android:divider="@color/divider"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@null" />
+
+
+    <include layout="@layout/include_submit"/>
+
+
+</LinearLayout>

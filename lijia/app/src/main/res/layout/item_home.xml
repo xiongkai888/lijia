@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_match_parent">
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:gravity="top"
+        android:padding="@dimen/d_10dp">
+
+        <com.xson.common.widget.CircleImageView
+            android:id="@+id/user_head_iv"
+            android:layout_width="@dimen/d_50dp"
+            android:layout_height="@dimen/d_50dp"
+            android:src="@drawable/default_pic" />
+
+        <LinearLayout
+            style="@style/v_match_parent_no"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/d_8dp">
+
+
+            <LinearLayout
+                style="@style/h_match_parent_no">
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    style="@style/text_weight"
+                    android:text="郭美美" />
+
+                <TextView
+                    android:id="@+id/state_tv"
+                    style="@style/text12color33cea6"
+                    android:paddingTop="@dimen/d_5dp"
+                    android:text="已处理" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/time_tv"
+                style="@style/text14color7c7c7c"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="8dp"
+                android:text="周一 12:36" />
+
+
+            <TextView
+                android:id="@+id/content_tv"
+                style="@style/text14color7c7c7c"
+                android:layout_marginTop="3dp"
+                android:text="服务项目：维修   服务费用：80元" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/line_H1dp_divider"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/d_10dp"
+        android:layout_marginRight="@dimen/d_10dp" />
+
+    <TextView
+        android:id="@+id/delete_order_tv"
+        style="@style/text14color33cea6"
+        android:layout_width="@dimen/d_80dp"
+        android:layout_height="@dimen/d_30dp"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/d_10dp"
+        android:visibility="gone"
+        android:background="@drawable/order_bg"
+        android:gravity="center"
+        android:text="@string/delete_order" />
+
+
+    <TextView style="@style/line_H10dp_on" />
+
+</LinearLayout>

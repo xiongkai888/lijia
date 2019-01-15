@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no"
+    tools:context="com.lanmei.lijia.ui.settting.activity.details.FixDescribeActivity">
+
+    <include layout="@layout/include_centertitletoolbar"/>
+
+    <ScrollView
+        style="@style/all_match_parent_no">
+
+
+        <LinearLayout
+            style="@style/all_match_parent_no">
+
+            <TextView
+                android:padding="@dimen/d_10dp"
+                android:id="@+id/content_tv"
+                style="@style/text" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

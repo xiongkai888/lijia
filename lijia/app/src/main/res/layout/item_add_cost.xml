@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_bottom_h"
+    android:padding="@dimen/d_8dp">
+
+
+    <TextView
+        android:id="@+id/position_tv"
+        style="@style/text"
+        android:layout_marginLeft="@dimen/d_5dp"
+        android:text="1" />
+
+    <EditText
+        android:id="@+id/cost_name_et"
+        android:layout_width="@dimen/d_120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/order_info_add_bg"
+        android:hint="请输入维修项目"
+        android:padding="@dimen/d_5dp"
+        android:singleLine="true"
+        android:textSize="@dimen/txt_12sp" />
+
+
+    <EditText
+        android:id="@+id/cost_et"
+        android:layout_width="@dimen/d_80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_15dp"
+        android:background="@drawable/order_info_add_bg"
+        android:hint="请输入价格"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/d_5dp"
+        android:singleLine="true"
+        android:maxLength="6"
+        android:textSize="@dimen/txt_12sp" />
+
+    <ImageView
+        android:id="@+id/delete_iv"
+        style="@style/text"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/d_15dp"
+        android:layout_marginRight="@dimen/d_10dp"
+        android:src="@drawable/order_subtract" />
+
+</LinearLayout>

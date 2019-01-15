@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ll_bottom_h"
+    android:gravity="center_vertical"
+    android:padding="@dimen/d_10dp">
+
+    <ImageView
+        android:id="@+id/choose_iv"
+        android:src="@drawable/pay_off"
+        style="@style/text"/>
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_marginLeft="@dimen/d_5dp"
+        android:text="我们不一样！！"
+        style="@style/text" />
+
+</LinearLayout>

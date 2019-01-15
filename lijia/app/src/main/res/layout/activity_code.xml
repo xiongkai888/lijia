@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ver="http://schemas.android.com/apk/res-auto"
+    style="@style/v_all_match_parent"
+    android:gravity="center_horizontal">
+
+
+    <RelativeLayout
+        style="@style/h_match_parent_no">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:padding="@dimen/d_10dp"
+            android:src="@drawable/back_circle"
+            style="@style/text" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/text"
+        android:layout_marginTop="@dimen/d_40dp"
+        android:text="输入验证码"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/send_code_to_tv"
+        style="@style/text14color999"
+        android:layout_marginTop="@dimen/d_10dp" />
+
+
+    <com.lanmei.lijia.view.VerificationCodeView
+        android:id="@+id/icv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_40dp"
+        android:layout_marginLeft="@dimen/d_30dp"
+        android:layout_marginRight="@dimen/d_30dp"
+        android:layout_marginTop="@dimen/d_50dp"
+        app:icv_et_bg_focus="@drawable/shape_icv_et_bg_focus"
+        app:icv_et_bg_normal="@drawable/shape_icv_et_bg_normal"
+        app:icv_et_divider_drawable="@drawable/shape_divider_identifying"
+        app:icv_et_number="6"
+        app:icv_et_text_color="#000000"
+        app:icv_et_width="@dimen/d_40dp" />
+
+    <!--<com.lanmei.lijia.view.VerificationCodeInput-->
+        <!--android:digits="1234567890"-->
+        <!--android:id="@+id/verificationCodeInput"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/d_50dp"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--ver:box="6"-->
+        <!--ver:box_bg_normal="@drawable/verification_edit_bg_normal"-->
+        <!--ver:box_bg_focus="@drawable/verification_edit_bg_focus"-->
+        <!--ver:child_h_padding="5dp"-->
+        <!--android:layout_marginBottom="16dp"/>-->
+
+
+    <TextView
+        android:id="@+id/anew_send_tv"
+        style="@style/text14color999"
+        android:layout_marginBottom="@dimen/d_10dp"
+        android:layout_marginTop="@dimen/d_80dp"
+        android:drawableRight="@drawable/in_right"
+        android:text="59秒后重发" />
+
+
+    <Button
+        android:id="@+id/next_bt"
+        style="@style/button_style"
+        android:background="@drawable/button_corners"
+        android:text="下一步" />
+
+</LinearLayout>

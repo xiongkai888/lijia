@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_match_parent_no">
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:layout_marginLeft="@dimen/d_20dp"
+        android:layout_marginRight="@dimen/d_10dp"
+        android:padding="@dimen/d_5dp">
+
+
+        <LinearLayout
+            style="@style/v_match_parent_no"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/fix_content_tv"
+                style="@style/text12color999"
+                android:drawableLeft="@drawable/order_equipment"
+                android:drawablePadding="@dimen/d_5dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/subscribe_time_tv"
+                style="@style/text12color999"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:drawableLeft="@drawable/order_time"
+                android:drawablePadding="@dimen/d_5dp"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/address_tv"
+                style="@style/text12color999"
+                android:layout_marginTop="@dimen/d_10dp"
+                android:drawableLeft="@drawable/order_position"
+                android:drawablePadding="@dimen/d_5dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/price_tv"
+                style="@style/text12color999"
+                android:layout_weight="1"
+                android:text="@string/go_price_sub" />
+
+            <TextView
+                android:id="@+id/see_map_tv"
+                style="@style/text12color999"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/d_5dp"
+                android:drawableTop="@drawable/order_position_icon"
+                android:gravity="center"
+                android:text="@string/see_map"
+                android:textColor="@color/color718081" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dialog_bg"
+    style="@style/v_match_parent">
+
+
+    <EditText
+        android:id="@+id/input_pwd_et"
+        android:layout_marginTop="@dimen/d_30dp"
+        android:layout_marginBottom="@dimen/d_30dp"
+        android:layout_marginRight="@dimen/d_20dp"
+        android:layout_marginLeft="@dimen/d_20dp"
+        style="@style/only_EditText_style"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:hint="@string/input_des_id"
+        android:background="@drawable/id_edittext"/>
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout style="@style/h_match_parent_no">
+
+
+        <TextView
+            android:id="@+id/no_tv"
+            style="@style/text14color999"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/cancel" />
+
+        <TextView style="@style/line_v1dp_divider" />
+
+
+        <TextView
+            android:id="@+id/yes_tv"
+            style="@style/text14colorWhite"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_sure"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/confirm" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

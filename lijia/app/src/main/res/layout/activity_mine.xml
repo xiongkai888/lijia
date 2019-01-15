@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <ScrollView
+        style="@style/all_match_parent_no"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/v_all_match_parent_no">
+
+            <!--头像-->
+
+            <LinearLayout
+                style="@style/h_match_parent_no"
+                android:background="@drawable/setting_bg"
+                android:gravity="center_vertical">
+
+
+                <com.xson.common.widget.CircleImageView
+                    android:id="@+id/head_iv"
+                    android:layout_width="@dimen/d_80dp"
+                    android:layout_height="@dimen/d_80dp"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    android:src="@drawable/default_pic" />
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    style="@style/text18colorWhite"
+                    android:layout_marginLeft="@dimen/d_10dp"
+                    android:text="游客" />
+
+
+            </LinearLayout>
+
+
+            <!--设置信息-->
+
+
+            <LinearLayout style="@style/ll_bottom_h">
+
+
+                <TextView
+                    android:id="@+id/data_tv"
+                    style="@style/text_weight"
+                    android:drawableTop="@drawable/setting_1"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_20dp"
+                    android:text="我的资料" />
+
+                <TextView style="@style/line_v1dp_divider" />
+
+                <TextView
+                    android:id="@+id/account_tv"
+                    style="@style/text_weight"
+                    android:drawableTop="@drawable/setting_2"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_20dp"
+                    android:text="我的账户" />
+
+                <TextView style="@style/line_v1dp_divider" />
+
+                <TextView
+                    android:id="@+id/order_tv"
+                    style="@style/text_weight"
+                    android:drawableTop="@drawable/setting_3"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_20dp"
+                    android:text="我的订单" />
+
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/ll_bottom_h">
+
+                <TextView
+                    android:id="@+id/order_setting_tv"
+                    style="@style/text_weight"
+                    android:drawableTop="@drawable/setting_4"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_20dp"
+                    android:text="接单设置" />
+
+                <TextView style="@style/line_v1dp_divider" />
+
+                <TextView
+                    android:id="@+id/store_tv"
+                    style="@style/text_weight"
+                    android:drawableTop="@drawable/setting_5"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_20dp"
+                    android:text="我的店铺" />
+
+                <TextView style="@style/line_v1dp_divider" />
+
+                <TextView
+                    android:id="@+id/comment_tv"
+                    style="@style/text_weight"
+                    android:drawableTop="@drawable/setting_6"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_20dp"
+                    android:text="@string/my_comment" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/ll_bottom_h">
+
+                <TextView
+                    android:id="@+id/see_equipment_tv"
+                    style="@style/text_weight"
+                    android:drawableTop="@drawable/setting_7"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_20dp"
+                    android:text="查看设备" />
+
+                <TextView style="@style/line_v1dp_divider" />
+
+                <TextView
+                    android:id="@+id/pwd_tv"
+                    style="@style/text_weight"
+                    android:drawableTop="@drawable/setting_8"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_20dp"
+                    android:text="密码修改" />
+
+                <TextView style="@style/line_v1dp_divider" />
+
+                <TextView
+                    android:id="@+id/setting_tv"
+                    style="@style/text_weight"
+                    android:drawableTop="@drawable/setting_9"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/d_20dp"
+                    android:paddingTop="@dimen/d_20dp"
+                    android:text="@string/setting" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

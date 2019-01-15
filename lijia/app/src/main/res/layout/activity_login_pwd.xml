@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent"
+    android:gravity="center_horizontal">
+
+
+    <RelativeLayout
+        style="@style/h_match_parent_no">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:padding="@dimen/d_10dp"
+            android:src="@drawable/back_circle"
+            style="@style/text" />
+
+    </RelativeLayout>
+
+    <TextView
+        style="@style/text"
+        android:layout_marginTop="@dimen/d_40dp"
+        android:text="输入登录密码"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        style="@style/ll_bottom_h"
+        android:layout_marginLeft="@dimen/d_40dp"
+        android:layout_marginRight="@dimen/d_40dp"
+        android:layout_marginTop="@dimen/d_40dp"
+        android:gravity="center_vertical">
+
+
+        <com.xson.common.widget.DrawClickableEditText
+            android:id="@+id/pwd_et"
+            style="@style/editText_login_style"
+            android:hint="@string/input_password_count"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_pwd_again"
+        style="@style/ll_bottom_h"
+        android:layout_marginLeft="@dimen/d_40dp"
+        android:layout_marginRight="@dimen/d_40dp"
+        android:gravity="center_vertical">
+
+
+        <com.xson.common.widget.DrawClickableEditText
+            android:id="@+id/pwd_again_et"
+            style="@style/editText_login_style"
+            android:hint="请再次输入6-18位密码"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/forgot_pwd_tv"
+        style="@style/text14color999"
+        android:layout_marginTop="@dimen/d_20dp"
+        android:drawableRight="@drawable/in_right"
+        android:text="忘记密码" />
+
+
+    <Button
+        android:id="@+id/next_bt"
+        style="@style/button_style"
+        android:layout_marginTop="@dimen/d_60dp"
+        android:background="@drawable/button_corners"
+        android:text="@string/login" />
+
+</LinearLayout>

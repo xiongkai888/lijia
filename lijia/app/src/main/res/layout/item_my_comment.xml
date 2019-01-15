@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/v_match_parent"
+    android:padding="@dimen/d_10dp">
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:gravity="center_vertical">
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:progressTint="@color/red"
+            android:rating="3"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/text12color999"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:layout_weight="1"
+            android:text="超级懒人" />
+
+        <TextView
+            android:id="@+id/time_tv"
+            style="@style/text12color999"
+            android:text="2018-05-18" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content_tv"
+        style="@style/text12color666"
+        android:layout_marginTop="@dimen/d_5dp"
+        android:text="我们不一样" />
+
+
+    <com.xson.common.widget.FormatTextView
+        android:id="@+id/reply_ft"
+        android:layout_marginTop="@dimen/d_10dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_gravity="center_vertical"
+        style="@style/text12colorRed" />
+
+    <Button
+        android:id="@+id/reply_bt"
+        android:layout_width="@dimen/d_60dp"
+        android:layout_height="25dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/d_5dp"
+        android:background="@drawable/reply_bg"
+        android:text="回复"
+        android:textColor="@color/white" />
+
+</LinearLayout>

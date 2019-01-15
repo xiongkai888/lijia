@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_match_parent_no">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/v_match_parent_no"
+            android:padding="@dimen/d_10dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/dingding"
+                style="@style/text" />
+
+            <TextView
+                android:id="@+id/down_tv"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/d_5dp"
+                style="@style/text14color33cea6" />
+
+            <TextView
+                android:id="@+id/product_tv"
+                android:text="000"
+                style="@style/text" />
+
+            <TextView
+                android:id="@+id/address_tv"
+                android:layout_marginTop="@dimen/d_3dp"
+                android:drawableLeft="@drawable/order_position"
+                style="@style/text12color999"
+                android:gravity="center_vertical" />
+
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/d_10dp"
+                android:gravity="center_vertical"
+                style="@style/h_match_parent_no">
+
+                <TextView
+                    android:background="@color/color33cea6"
+                    android:layout_width="@dimen/d_5dp"
+                    android:layout_height="@dimen/d_20dp" />
+
+
+                <TextView
+                    android:layout_marginLeft="@dimen/d_5dp"
+                    style="@style/text"
+                    android:text="业主要求" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_marginLeft="@dimen/d_10dp"
+                android:layout_marginTop="@dimen/d_3dp"
+                style="@style/text12color999"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/d_10dp"
+                android:gravity="center_vertical"
+                style="@style/h_match_parent_no">
+
+                <TextView
+                    android:background="@color/color33cea6"
+                    android:layout_width="@dimen/d_5dp"
+                    android:layout_height="@dimen/d_20dp" />
+
+
+                <TextView
+                    android:layout_marginLeft="@dimen/d_5dp"
+                    style="@style/text"
+                    android:text="预约时间" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/time_tv"
+                android:layout_marginLeft="@dimen/d_10dp"
+                android:layout_marginTop="@dimen/d_3dp"
+                style="@style/text12color999"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/d_15dp"
+                android:background="@color/colorF4F4"
+                android:padding="@dimen/d_10dp"
+                android:layout_marginBottom="@dimen/d_20dp"
+                style="@style/h_match_parent_no">
+
+
+                <TextView
+                    android:text="上门费用："
+                    style="@style/text" />
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:text="￥0"
+                    android:textColor="@color/red"
+                    style="@style/text" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout style="@style/h_match_parent_no">
+
+
+        <TextView
+            android:id="@+id/no_tv"
+            style="@style/text14color999"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="放弃抢单" />
+
+        <TextView style="@style/line_v1dp_divider" />
+
+
+        <TextView
+            android:id="@+id/yes_tv"
+            style="@style/text14colorWhite"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/color33cea6"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="立即抢单" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

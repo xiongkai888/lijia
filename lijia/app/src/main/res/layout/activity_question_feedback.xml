@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no"
+    tools:context="com.lanmei.lijia.ui.home.activity.QuestionFeedbackActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+
+        <LinearLayout style="@style/v_all_match_parent_no">
+
+            <TextView
+                style="@style/text"
+                android:layout_margin="@dimen/d_10dp"
+                android:text="反馈类型 (必填)" />
+
+            <TextView style="@style/line_H1dp_divider" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/text"
+                android:layout_margin="@dimen/d_10dp"
+                android:text="反馈内容 (必填)" />
+
+            <TextView style="@style/line_H1dp_divider" />
+
+            <com.lanmei.lijia.view.ScrollEditText
+                android:id="@+id/content_et"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_90dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:maxLength="300"
+                android:hint="请填写10个字以上的问题描述，以便我们更好的为您提供帮助"
+                android:paddingRight="@dimen/d_10dp"
+                android:paddingTop="@dimen/d_5dp"
+                android:paddingLeft="@dimen/d_10dp" />
+
+
+
+            <TextView
+                android:id="@+id/num_tv"
+                android:text="0/300"
+                android:paddingTop="@dimen/d_2dp"
+                android:paddingBottom="@dimen/d_5dp"
+                android:paddingRight="@dimen/d_10dp"
+                android:textColor="@color/color999"
+                android:gravity="end"
+               style="@style/match_parent"/>
+
+            <TextView
+                style="@style/text"
+                android:layout_margin="@dimen/d_10dp"
+                android:text="添加图片 (提供问题截图，选填)" />
+
+            <TextView style="@style/line_H1dp_divider" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                    android:id="@+id/snpl_moment_add_photos"
+                    style="@style/WrapWrap"
+                    android:layout_margin="10dp"
+                    app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                    app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                    app:bga_snpl_editable="true"
+                    app:bga_snpl_itemCornerRadius="0dp"
+                    app:bga_snpl_itemSpanCount="3"
+                    app:bga_snpl_itemWhiteSpacing="4dp"
+                    app:bga_snpl_itemWidth="0dp"
+                    app:bga_snpl_maxItemCount="9"
+                    app:bga_snpl_otherWhiteSpacing="100dp"
+                    app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_dark"
+                    app:bga_snpl_plusDrawable="@drawable/fix_photo"
+                    app:bga_snpl_plusEnable="true"
+                    app:bga_snpl_sortable="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/submit_bt"
+        style="@style/button_style"
+        android:background="@drawable/button_selector"
+        android:text="提交反馈" />
+
+</LinearLayout>

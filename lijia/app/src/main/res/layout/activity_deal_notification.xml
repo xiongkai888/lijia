@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent"
+    tools:context="com.lanmei.lijia.ui.home.activity.DealNotificationActivity">
+
+    <include
+        layout="@layout/activity_single_listview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_0dp"
+        android:layout_weight="1" />
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        style="@style/h_match_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/d_40dp"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/read_tv"
+            style="@style/text_weight"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="设为已读"
+            android:textColor="@color/color33cea6" />
+
+        <TextView style="@style/line_v1dp_divider" />
+
+        <TextView
+            android:id="@+id/all_pitch_on_tv"
+            style="@style/text_weight"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="全部选中"
+            android:textColor="@color/color33cea6" />
+
+        <TextView style="@style/line_v1dp_divider" />
+
+        <TextView
+            android:id="@+id/delete_tv"
+            style="@style/text_weight"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/color33cea6" />
+
+    </LinearLayout>
+
+</LinearLayout>

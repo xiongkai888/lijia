@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent"
+    tools:context="com.lanmei.lijia.ui.settting.activity.OrderInfoActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/ll_parent"
+            style="@style/v_all_match_parent_no">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    style="@style/v_all_match_parent_no"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+
+                    <TextView
+                        android:id="@+id/hint_tv"
+                        style="@style/text12color998462"
+                        android:layout_width="match_parent"
+                        android:background="@color/colorFBF1C2"
+                        android:padding="@dimen/d_10dp"
+                        android:visibility="gone" />
+
+                    <com.lanmei.lijia.view.stepview.HorizontalStepView
+                        android:id="@+id/stepview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/d_10dp" />
+
+                    <TextView
+                        style="@style/match_parent_no"
+                        android:background="@color/colorF4F4"
+                        android:padding="@dimen/d_10dp"
+                        android:text="预约信息"
+                        android:textColor="@color/color848c99" />
+
+                    <include layout="@layout/include_order_info" />
+
+                    <TextView
+                        style="@style/match_parent_no"
+                        android:layout_marginTop="@dimen/d_5dp"
+                        android:background="@color/colorF4F4"
+                        android:padding="@dimen/d_10dp"
+                        android:text="订单信息"
+                        android:textColor="@color/color848c99" />
+
+
+                    <TextView
+                        android:id="@+id/order_no_tv"
+                        style="@style/text12color999"
+                        android:paddingBottom="@dimen/d_5dp"
+                        android:paddingLeft="@dimen/d_30dp"
+                        android:paddingTop="@dimen/d_10dp"
+                        android:text="订单编号：" />
+
+                    <TextView
+                        android:id="@+id/order_time_tv"
+                        style="@style/text12color999"
+                        android:layout_marginLeft="@dimen/d_30dp"
+                        android:paddingBottom="@dimen/d_5dp"
+                        android:text="下单时间：" />
+
+
+                    <TextView style="@style/line_H1dp_divider" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_id"
+                        style="@style/ll_bottom_h"
+                        android:padding="@dimen/d_5dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            style="@style/text12color999"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="1"
+                            android:text="设备ID" />
+
+                        <TextView
+                            android:id="@+id/device_id_tv"
+                            style="@style/text12color999"
+                            android:layout_marginRight="@dimen/d_10dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_pics"
+                        style="@style/ll_bottom_h"
+                        android:padding="@dimen/d_5dp">
+
+                        <TextView
+                            style="@style/text12color999"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="1"
+                            android:paddingBottom="@dimen/d_5dp"
+                            android:paddingTop="@dimen/d_5dp"
+                            android:text="@string/client_fix_pics" />
+
+                        <TextView
+                            style="@style/text12color999"
+                            android:layout_marginRight="@dimen/d_10dp"
+                            android:drawableRight="@drawable/in_right"
+                            android:text="查看" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_describe"
+                        style="@style/ll_bottom_h"
+                        android:padding="@dimen/d_5dp">
+
+                        <TextView
+                            style="@style/text12color999"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="1"
+                            android:paddingBottom="@dimen/d_5dp"
+                            android:paddingTop="@dimen/d_5dp"
+                            android:text="@string/client_fix_describe" />
+
+                        <TextView
+                            style="@style/text12color999"
+                            android:layout_marginRight="@dimen/d_10dp"
+                            android:drawableRight="@drawable/in_right"
+                            android:text="查看" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_fix_pics"
+                        style="@style/ll_bottom_h"
+                        android:padding="@dimen/d_5dp">
+
+                        <TextView
+                            style="@style/text12color999"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="1"
+                            android:paddingBottom="@dimen/d_5dp"
+                            android:paddingTop="@dimen/d_5dp"
+                            android:text="@string/shi_fix_pics" />
+
+                        <TextView
+                            style="@style/text12color999"
+                            android:layout_marginRight="@dimen/d_10dp"
+                            android:drawableRight="@drawable/in_right"
+                            android:text="查看" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/ll_bottom_h"
+                        android:padding="@dimen/d_5dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/fix_content_tv"
+                            style="@style/text12color999"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="1"
+                            android:paddingBottom="@dimen/d_5dp"
+                            android:paddingTop="@dimen/d_5dp" />
+
+                        <TextView
+                            android:id="@+id/price_tv"
+                            style="@style/text12color999"
+                            android:layout_marginRight="@dimen/d_15dp"
+                            android:textColor="@color/red" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/f_add_cost"
+                        style="@style/ll_bottom_h"
+                        android:padding="@dimen/d_10dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_add_cost_button"
+                            style="@style/h_match_parent_no"
+                            android:layout_width="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/add_cost_iv"
+                                style="@style/text"
+                                android:layout_marginLeft="@dimen/d_5dp"
+                                android:layout_marginRight="@dimen/d_10dp"
+                                android:src="@drawable/order_add" />
+
+                            <TextView
+                                android:id="@+id/cost_num_tv"
+                                style="@style/text12color999"
+                                android:text="项目费 (0个)" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/go_price_tv"
+                            style="@style/text12color999"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="@dimen/d_10dp"
+                            android:text="0元"
+                            android:textColor="@color/red" />
+
+
+                    </FrameLayout>
+
+                    <!--上门费列表-->
+                    <LinearLayout
+                        android:id="@+id/ll_add_cost"
+                        style="@style/v_match_parent_no" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_door_fee"
+                        style="@style/ll_bottom_h"
+                        android:padding="@dimen/d_5dp">
+
+                        <TextView
+                            style="@style/text12color999"
+                            android:layout_marginLeft="25dp"
+                            android:layout_weight="1"
+                            android:paddingBottom="@dimen/d_5dp"
+                            android:paddingTop="@dimen/d_5dp"
+                            android:text="上门费" />
+
+                        <TextView
+                            android:id="@+id/door_fee_tv"
+                            style="@style/text12color999"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginRight="@dimen/d_15dp"
+                            android:text="0元"
+                            android:textColor="@color/color33cea6" />
+
+                    </LinearLayout>
+
+
+                    <TextView style="@style/line_H10dp_on" />
+
+                    <cn.bingoogolapple.photopicker.widget.BGASortableNinePhotoLayout
+                        android:id="@+id/snpl_moment_add_photos"
+                        style="@style/WrapWrap"
+                        android:layout_margin="10dp"
+                        android:visibility="gone"
+                        app:bga_snpl_deleteDrawable="@mipmap/bga_pp_ic_delete"
+                        app:bga_snpl_deleteDrawableOverlapQuarter="false"
+                        app:bga_snpl_editable="true"
+                        app:bga_snpl_itemCornerRadius="0dp"
+                        app:bga_snpl_itemSpanCount="3"
+                        app:bga_snpl_itemWhiteSpacing="4dp"
+                        app:bga_snpl_itemWidth="0dp"
+                        app:bga_snpl_maxItemCount="9"
+                        app:bga_snpl_otherWhiteSpacing="100dp"
+                        app:bga_snpl_placeholderDrawable="@mipmap/bga_pp_ic_holder_dark"
+                        app:bga_snpl_plusDrawable="@drawable/fix_photo"
+                        app:bga_snpl_plusEnable="true"
+                        app:bga_snpl_sortable="true" />
+
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+
+            <include
+                android:id="@+id/ll_order_bottom"
+                layout="@layout/include_order_bottom" />
+        </LinearLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

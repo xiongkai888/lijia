@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_information1"
+        style="@style/h_match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/d_10dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/head_iv"
+                android:layout_width="@dimen/d_50dp"
+                android:layout_height="@dimen/d_50dp"
+                android:src="@drawable/information_jytb" />
+
+            <TextView
+                android:id="@+id/num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:background="@drawable/circle_information"
+                android:gravity="center"
+                android:text="22"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/h_match_parent_no"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    style="@style/text_weight"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="交易通知" />
+
+
+                <TextView
+                    android:id="@+id/time_tv"
+                    style="@style/text14color999" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content_tv"
+                style="@style/text14color999"
+                android:layout_marginTop="@dimen/d_5dp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_information2"
+        style="@style/h_match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/d_10dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/head2_iv"
+                android:layout_width="@dimen/d_50dp"
+                android:layout_height="@dimen/d_50dp"
+                android:src="@drawable/information_tztp" />
+
+            <TextView
+                android:id="@+id/num2_tv"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/circle_information"
+                android:gravity="center"
+                android:text="22"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/h_match_parent_no"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/title2_tv"
+                    style="@style/text_weight"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="系统通知" />
+
+
+                <TextView
+                    android:id="@+id/time2_tv"
+                    style="@style/text14color999" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content2_tv"
+                style="@style/text14color999"
+                android:layout_marginTop="@dimen/d_5dp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_information3"
+        style="@style/h_match_parent"
+        android:gravity="center_vertical"
+        android:padding="@dimen/d_10dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/head3_iv"
+                android:layout_width="@dimen/d_50dp"
+                android:layout_height="@dimen/d_50dp"
+                android:src="@drawable/information_bo" />
+
+            <TextView
+                android:id="@+id/num3_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                android:background="@drawable/circle_information"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/d_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/h_match_parent_no"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/title3_tv"
+                    style="@style/text_weight"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="商机通知" />
+
+
+                <TextView
+                    android:id="@+id/time3_tv"
+                    style="@style/text14color999" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content3_tv"
+                style="@style/text14color999"
+                android:layout_marginTop="@dimen/d_5dp"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

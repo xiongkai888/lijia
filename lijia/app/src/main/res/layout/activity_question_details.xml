@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent"
+    tools:context="com.lanmei.lijia.ui.home.activity.QuestionDetailsActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/text16colorBlack"
+        android:layout_margin="@dimen/d_10dp"
+        android:textColor="@color/black" />
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_0dp"
+        android:layout_weight="1" />
+
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout
+        style="@style/h_match_parent"
+        android:layout_height="@dimen/d_45dp">
+
+        <LinearLayout
+            android:id="@+id/ll_feedback"
+            style="@style/text_weight"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text"
+                android:drawableLeft="@drawable/details_1"
+                android:gravity="center"
+                android:text="意见反馈"
+                android:textColor="@color/color33cea6" />
+
+        </LinearLayout>
+
+
+        <TextView style="@style/line_v1dp_divider" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_contact"
+            style="@style/text_weight"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                style="@style/text"
+                android:drawableLeft="@drawable/details_2"
+                android:drawablePadding="@dimen/d_3dp"
+                android:gravity="center"
+                android:text="联系客服" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

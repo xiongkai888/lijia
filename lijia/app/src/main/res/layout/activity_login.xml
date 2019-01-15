@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent"
+    android:gravity="center_horizontal"
+    tools:context="com.lanmei.lijia.ui.login.LoginActivity">
+
+    <TextView
+        style="@style/text"
+        android:layout_marginTop="@dimen/d_40dp"
+        android:text="输入手机号"
+        android:textSize="24sp" />
+
+    <TextView
+        style="@style/text14color999"
+        android:layout_marginTop="@dimen/d_10dp"
+        android:text="为方便业主联系你，请输入手机号码" />
+
+
+    <LinearLayout
+        style="@style/ll_bottom_h"
+        android:layout_marginLeft="@dimen/d_40dp"
+        android:layout_marginRight="@dimen/d_40dp"
+        android:layout_marginTop="@dimen/d_30dp"
+        android:gravity="center_vertical">
+
+
+        <ImageView
+            style="@style/text"
+            android:src="@drawable/guoqi" />
+
+        <TextView
+            style="@style/text14color999"
+            android:drawableLeft="@drawable/in_right"
+            android:text="+86" />
+
+
+        <com.xson.common.widget.DrawClickableEditText
+            android:id="@+id/phone_et"
+            style="@style/editText_login_style"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:hint="@string/input_phone_number"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/d_80dp">
+
+        <CheckBox
+            android:id="@+id/agree_cb"
+            style="@style/text"
+            android:layout_marginLeft="@dimen/d_15dp"
+            android:background="@drawable/check_bg_protocol"
+            android:button="@null" />
+
+        <TextView
+            android:text="同意"
+            style="@style/text14color666" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:text="《法律声明及隐私政策》"
+            style="@style/text14color33cea6" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_bt"
+        style="@style/button_style"
+        android:background="@drawable/button_unable"
+        android:text="下一步" />
+
+</LinearLayout>

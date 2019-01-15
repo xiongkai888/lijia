@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_match_parent">
+
+    <TextView style="@style/line_H10dp_on" />
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:layout_marginLeft="@dimen/d_10dp"
+        android:layout_marginRight="@dimen/d_10dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/d_5dp">
+
+        <com.xson.common.widget.CircleImageView
+            android:id="@+id/head_iv"
+            android:layout_width="@dimen/d_40dp"
+            android:layout_height="@dimen/d_40dp"
+            android:src="@drawable/default_pic" />
+
+
+        <TextView
+            android:id="@+id/user_name_tv"
+            style="@style/text_weight"
+            android:layout_marginLeft="@dimen/d_10dp" />
+
+
+        <TextView
+            android:id="@+id/time_tv"
+            style="@style/text14color999"
+            android:layout_marginLeft="@dimen/d_10dp"
+            android:drawableRight="@drawable/in_right" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/line_H1dp_divider"
+        android:layout_marginLeft="@dimen/d_10dp"
+        android:layout_marginRight="@dimen/d_10dp" />
+
+
+    <include layout="@layout/include_order_info_sub" />
+
+    <TextView
+        style="@style/line_H1dp_divider"
+        android:layout_marginLeft="@dimen/d_10dp"
+        android:layout_marginRight="@dimen/d_10dp" />
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:gravity="right"
+        android:paddingRight="@dimen/d_10dp">
+
+        <!--go_tv 在我的订单要显示  任务商机不显示-->
+
+        <TextView
+            android:id="@+id/go_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d_10dp"
+            android:background="@drawable/order_button_bg1"
+            android:gravity="center"
+            android:minWidth="@dimen/d_70dp"
+            android:text="@string/go"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/txt_12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/contact_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d_10dp"
+            android:background="@drawable/order_button_bg2"
+            android:gravity="center"
+            android:minWidth="@dimen/d_70dp"
+            android:text="@string/contact"
+            android:textColor="@color/color33cea6"
+            android:textSize="@dimen/txt_12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

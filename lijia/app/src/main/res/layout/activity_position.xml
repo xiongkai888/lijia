@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent"
+    tools:context="com.lanmei.lijia.ui.league.PositionActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <LinearLayout
+        style="@style/h_match_parent_no"
+        android:background="@color/color2d2e38"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/d_10dp">
+
+        <include layout="@layout/search_edittext" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/city_name_tv"
+        style="@style/text"
+        android:padding="@dimen/d_10dp"
+        android:text="当前定位城市：" />
+
+    <TextView
+        style="@style/text"
+        android:drawableLeft="@drawable/hot_city"
+        android:drawablePadding="@dimen/d_5dp"
+        android:paddingLeft="@dimen/d_10dp"
+        android:text="热门城市"
+        android:textColor="@color/colorAAA" />
+
+    <TextView
+        style="@style/line_H1dp_divider"
+        android:layout_marginTop="@dimen/d_10dp" />
+
+
+    <include layout="@layout/fragment_single_listview_no" />
+
+</LinearLayout>

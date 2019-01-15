@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/v_all_match_parent_no"
+    tools:context="com.lanmei.lijia.ui.league.MasterLeagueActivity">
+
+    <include layout="@layout/include_centertitletoolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout style="@style/v_all_match_parent_no">
+
+
+            <LinearLayout
+                style="@style/match_parent_no"
+                android:background="@color/color2d2e38">
+
+                <TextView
+                    style="@style/text14colorC2C3C5"
+                    android:padding="@dimen/d_10dp"
+                    android:text="账号已生成，补全证件信息即可接单" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_city"
+                style="@style/h_p15_match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/text14color2d2d2d"
+                    android:text="城市" />
+
+                <ImageView
+                    android:layout_width="@dimen/d_15dp"
+                    android:layout_height="@dimen/d_15dp"
+                    android:layout_marginLeft="@dimen/d_3dp"
+                    android:src="@drawable/choose_city" />
+
+                <TextView style="@style/text_weight" />
+
+                <TextView
+                    android:id="@+id/city_name_tv"
+                    style="@style/text14color2d2d2d"
+                    android:layout_gravity="right"
+                    android:drawableRight="@drawable/in_right"
+                    android:gravity="right"
+                    android:hint="@string/choose_city" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/match_parent_no">
+
+                <TextView
+                    style="@style/text14colorB2B3B5"
+                    android:layout_weight="1"
+                    android:padding="@dimen/d_10dp"
+                    android:text="身份证信息" />
+
+                <TextView
+                    style="@style/text14colorB2B3B5"
+                    android:padding="@dimen/d_10dp"
+                    android:text="信息仅审核，绝不外泄" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_id_number"
+                style="@style/h_p15_match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/text_weight"
+                    android:text="身份证照片" />
+
+                <TextView
+                    android:id="@+id/id_number_tv"
+                    style="@style/text14color2d2d2d"
+                    android:layout_gravity="right"
+                    android:drawableRight="@drawable/in_right"
+                    android:hint="@string/choose" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/h_p15_match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/text_weight"
+                    android:text="师傅名字" />
+
+                <EditText
+                    android:id="@+id/name_et"
+                    style="@style/text"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/input_name"
+                    android:maxLength="8" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/h_p15_match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/text_weight"
+                    android:text="身份证号" />
+
+                <EditText
+                    android:id="@+id/id_number_et"
+                    style="@style/text"
+                    android:background="@null"
+                    android:gravity="end"
+                    android:digits="0123456789Xx"
+                    android:hint="@string/input_id_number"
+                    android:maxLength="18" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_other"
+                style="@style/h_p15_match_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/text_weight"
+                    android:text="其他证书照片" />
+
+                <TextView
+                    android:id="@+id/other_tv"
+                    style="@style/text14color2d2d2d"
+                    android:layout_gravity="right"
+                    android:drawableRight="@drawable/in_right"
+                    android:hint="@string/choose" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/ll_serve"
+                style="@style/match_parent"
+                android:gravity="center_vertical"
+                android:padding="@dimen/d_15dp">
+
+                <TextView
+                    style="@style/text"
+                    android:lines="1"
+                    android:minWidth="@dimen/d_80dp"
+                    android:text="服务工种" />
+
+                <TextView
+                    android:id="@+id/serve_tv"
+                    style="@style/text14color2d2d2d"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="@dimen/d_120dp"
+                    android:drawableRight="@drawable/in_right"
+                    android:hint="@string/choose"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

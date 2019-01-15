@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/v_all_match_parent">
+
+
+    <LinearLayout
+        style="@style/v_match_parent_no"
+        android:background="@color/color2d2e38"
+        android:gravity="center_horizontal">
+
+        <TextView
+            style="@style/text"
+            android:layout_marginTop="@dimen/d_40dp"
+            android:text="欢迎加入"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <TextView
+            style="@style/text12color718081"
+            android:layout_marginBottom="@dimen/d_30dp"
+            android:text="工作自由，收入稳定" />
+
+        <Button
+            android:id="@+id/register_bt"
+            style="@style/button_style"
+            android:layout_height="@dimen/d_50dp"
+            android:text="立即注册，开始接单赚钱"
+            android:textSize="@dimen/txt_18sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/text16colorBlack"
+        android:layout_margin="@dimen/d_10dp"/>
+
+    <TextView style="@style/line_H1dp_divider" />
+
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_height="@dimen/d_0dp"
+        style="@style/match_parent_no">
+
+        <LinearLayout style="@style/v_match_parent_no">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    <TextView style="@style/line_H1dp_divider" />
+
+    <LinearLayout
+        android:id="@+id/ll_questions"
+        style="@style/h_match_parent_no"
+        android:padding="@dimen/d_10dp">
+
+        <TextView
+            style="@style/text16colorBlack"
+            android:layout_weight="1"
+            android:text="常见问题" />
+
+        <ImageView
+            style="@style/text"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/in_right" />
+
+    </LinearLayout>
+
+</LinearLayout>

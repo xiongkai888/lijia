@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/h_match_parent"
+    android:gravity="center_vertical"
+    android:padding="@dimen/d_10dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/head_iv"
+            android:layout_width="@dimen/d_50dp"
+            android:layout_height="@dimen/d_50dp"
+            android:src="@drawable/default_pic" />
+
+        <TextView
+            android:id="@+id/num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@drawable/circle_information"
+            android:gravity="center"
+            android:text="22"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/d_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/h_match_parent_no"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/title_tv"
+                style="@style/text_weight"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="交易通知！" />
+
+
+            <TextView
+                android:id="@+id/time_tv"
+                style="@style/text14color999"
+                android:text="今天" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content_tv"
+            style="@style/text14color999"
+            android:layout_marginTop="@dimen/d_5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="亲，你的订单*************" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
